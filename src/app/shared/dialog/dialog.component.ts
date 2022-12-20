@@ -15,8 +15,8 @@ export class DialogComponent {
   firstNameControl=new FormControl('');
   lastNameControl=new FormControl('');
   studentForm=new FormGroup({
-    firstName: this.firstNameControl,
-    lastName:this.lastNameControl,
+  firstName: this.firstNameControl,
+  lastName:this.lastNameControl,
   });
 
   constructor(private readonly dialogRef:DialogRef,@Inject(MAT_DIALOG_DATA) public data: Student|null){

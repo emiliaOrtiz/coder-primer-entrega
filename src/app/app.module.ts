@@ -9,6 +9,8 @@ import { StudentsPageComponent } from './pages/students-page/students-page.compo
 import { MyMaterialModule } from './modules/my-material/my-material.module';
 import { ReactiveFormsModule } from '@angular/forms';
 import { DialogComponent } from './shared/dialog/dialog.component';
+import {MatListModule} from '@angular/material/list';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 @NgModule({
   declarations: [
@@ -23,6 +25,8 @@ import { DialogComponent } from './shared/dialog/dialog.component';
     BrowserAnimationsModule,
     MyMaterialModule,
     ReactiveFormsModule,
+    MatListModule,
+    MatExpansionModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

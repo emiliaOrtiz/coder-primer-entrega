@@ -6,6 +6,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [],
@@ -19,6 +21,8 @@ import {MatInputModule} from '@angular/material/input';
     MatToolbarModule,
     MatDialogModule,
     MatInputModule,
+    MatExpansionModule,
+    MatTooltipModule,
   ]
 })
 export class MyMaterialModule { }

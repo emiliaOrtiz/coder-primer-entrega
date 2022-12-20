@@ -22,7 +22,17 @@ export class StudentsPageComponent {
   ];
   displayedColumns=['id','firstName','lastName','isActive','edit','delete']
 
-  constructor(private readonly dialogService: MatDialog){}
+  //the status of the button is disabled when the user is log out
+    //and when dont have the proper rights
+  private  buttonState:boolean=false;
+  constructor(private readonly dialogService: MatDialog){
+    
+  }
+
+  public buttonStateFuntion():boolean{
+    return this.buttonState;
+  }
+  
 
   addStudent(){
     const dialog=this.dialogService.open(DialogComponent)
@@ -51,5 +61,10 @@ export class StudentsPageComponent {
           }
 
         })
-}
+    }
+    OnInit(){
+      this.buttonState=false;
+    }
+
+  
 }
