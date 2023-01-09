@@ -3,6 +3,7 @@ import { Component, Inject } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import { MAT_DIALOG_DATA } from '@angular/material/dialog';
 import { Student } from 'src/app/models/student.model';
+import { MyMaterialModule } from 'src/app/modules/my-material/my-material.module';
 
 
 @Component({
