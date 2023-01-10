@@ -10,6 +10,7 @@ import { FirstLayoutComponent } from './first-layout/first-layout.component';
 import { StudentDetailComponent } from './pages/student-detail/student-detail.component';
 
 const routes: Routes=[
+ 
   {
     path:'',
     component:AppComponent,
@@ -25,6 +26,10 @@ const routes: Routes=[
       {
         path:'students/:id',
         component:StudentDetailComponent
+      },
+      {
+        path:'**',
+        component:StartPageComponent
       }
       
     ]
