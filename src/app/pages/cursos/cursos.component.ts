@@ -18,7 +18,7 @@ addCurso() {
     if(value){
       const lastId=this.servicio.students[this.cursos.length-1]?.id;
       
-      this.cursos=[...this.cursos,new Cursos(lastId+1,value.name,value.profesor,value.isActive,true)]
+      this.cursos=[...this.cursos,new Cursos(lastId+1,value.name,value.profesor,value.totalAlumn,true)]
     }
   }
     

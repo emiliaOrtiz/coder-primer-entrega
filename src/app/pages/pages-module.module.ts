@@ -5,6 +5,10 @@ import { MyMaterialModule } from '../modules/my-material/my-material.module';
 import { CursoDialogComponent } from './cursos/curso-dialog/curso-dialog.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginComponent } from './login/login.component';
+import { StartPageComponent } from './start-page/start-page.component';
+import { StudentsPageComponent } from './students-page/students-page.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,16 +17,24 @@ import { LoginComponent } from './login/login.component';
     CursosComponent,
     CursoDialogComponent,
     LoginComponent,
+    StartPageComponent,
+    StudentsPageComponent,
+    StudentDetailComponent,
+
   ],
   imports: [
     CommonModule,
     MyMaterialModule,
     ReactiveFormsModule,
+    RouterModule,
   ],
   exports:[
     CursosComponent,
     CursoDialogComponent,
     LoginComponent,
+    StartPageComponent,
+    StudentsPageComponent,
+    StudentDetailComponent,
   ]
 })
 export class PagesModuleModule { }
